@@ -53,7 +53,7 @@ class LoginController extends Controller
             if (auth()->user()->job == 'admin') {
                 return redirect('dashboard/admin');
             } else if (auth()->user()->job == 'user') {
-                return redirect('dashboard');
+                return redirect('dashboard/fashion');
             } else {
                 return redirect('dashboard');
             }

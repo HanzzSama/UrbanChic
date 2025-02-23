@@ -11,9 +11,7 @@ class DashboardController extends Controller
     {
         $produk = Produk::latest()->paginate(12);
 
-        return view('dashboard.dashboard', [
-            'produk' => $produk
-        ]);
+        return view('dashboard.userDashboard', compact('produk'));
     }
 
     public function adminHome()

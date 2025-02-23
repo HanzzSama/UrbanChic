@@ -220,6 +220,23 @@ body::-webkit-scrollbar-track {
 }
 .menu-top li:hover div > h4 {
     color: white;
+}.btn-nav-menu{
+    display: flex;
+}
+.menu-bottom button{
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    border-radius: 5px;
+    border: none;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background: #e56363;
+}
+.btn-nav-menu button i{
+    font-size: 22px;
 }
 /* === Profile === */
 .profile {

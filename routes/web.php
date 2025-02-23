@@ -11,7 +11,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::middleware(['auth', 'job:user'])->group(function () {
-    Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('dashboard/fashion', [DashboardController::class, 'index'])->name('dashboard.fashion');
 });
 Route::middleware(['auth', 'job:admin'])->group(function () {
     Route::get('dashboard/admin', [DashboardController::class, 'adminHome'])->name('dashboard.admin');

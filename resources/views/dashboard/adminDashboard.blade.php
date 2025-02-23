@@ -98,14 +98,15 @@
                                     </div>
                                 </li>
                             </div>
-                            <a href="/confirm">
-                                <li class="login">
+                            <form method="post" action="{{ route('logout') }}" class="btn-nav-menu">
+                                @csrf
+                                <button class="login">
                                     <i class="bx bx-log-in-circle"></i>
                                     <div>
-                                        <h4>Login</h4>
+                                        <h4>Log Out</h4>
                                     </div>
-                                </li>
-                            </a>
+                                </button>
+                            </form>
                         </ul>
                     </div>
                 </div>
